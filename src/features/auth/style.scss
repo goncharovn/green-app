@@ -1,0 +1,35 @@
+.authFormWrapper {
+	display: flex;
+	align-items: center;
+
+	min-height: calc(100% - (50px * 2));
+	max-width: 500px;
+
+	margin: 50px auto;
+
+	padding: 0 15px;
+}
+
+.authForm {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	box-sizing: border-box;
+	width: 100%;
+
+
+	padding: 40px 30px;
+
+	border: 1px solid #707070;
+	border-radius: 10px;
+	box-shadow: 0 0 6px 3px rgba(94, 94, 94, 0.3);
+}
+
+.authForm__button {
+	align-self: center;
+}
+
+.authForm__hint {
+	text-align: center;
+}

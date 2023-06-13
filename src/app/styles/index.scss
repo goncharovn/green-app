@@ -1,22 +1,79 @@
 html {
 	height: 100%;
+
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
 	min-height: 100%;
+
 	margin: 0;
 }
 
 #root {
-	position: absolute;
+	position: fixed;
 	top: 0;
+	right: 0;
 	left: 0;
-
-	width: 100%;
-	height: 100%;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 ul {
 	padding: 0;
+
 	margin: 0;
+}
+
+::selection {
+	background-color: #006e5a;
+	color: #ffffff;
+}
+
+.button {
+	position: relative;
+
+	padding: 8px 12px;
+
+	border: 1px solid #000000;
+	border-radius: 5px;
+
+	font-size: 16px;
+
+	cursor: pointer;
+
+	transition: background-color 0.2s, border-color 0.2s
+}
+
+.button:hover {
+	border-color: #005c4b;
+
+	background-color: #005c4b;
+}
+
+.button--green {
+	border-color: #006e5a;
+
+	background-color: #006e5a;
+
+	color: #ffffff;
+}
+
+.input {
+	box-sizing: border-box;
+
+	padding: 5px 10px;
+
+	border: 1px solid #000;
+	border-radius: 8px;
+	outline: none;
+
+	font-size: 16px;
+
+	transition: box-shadow 0.2s ease-in;
+}
+
+.input:focus {
+	box-shadow: 0 0 3px 3px rgba(0, 110, 90, 0.2);
 }
